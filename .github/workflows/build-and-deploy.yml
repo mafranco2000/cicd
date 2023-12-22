@@ -52,6 +52,7 @@ jobs:
         strip_components: 1
         rm: false
         overwrite: true
+      run: echo ${{ secrets.SSH_HOST }}
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
